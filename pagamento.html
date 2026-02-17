@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento - Pizzaria do Robson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>💳 Finalizar Pedido</h1>
+      <ul>
+        <li><a href="index.html">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Resumo do Pedido</h2>
+    <p id="resumo"></p>
+
+    <form id="formPagamento">
+      <label>Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label>Endereço:</label>
+      <input type="text" id="endereco" required>
+
+      <label>Telefone:</label>
+      <input type="text" id="telefone" required>
+
+      <label>Forma de Pagamento:</label>
+      <select id="pagamento">
+        <option>Pix</option>
+        <option>Cartão</option>
+        <option>Dinheiro</option>
+      </select>
+
+      <button type="submit">Confirmar Pedido</button>
+    </form>
+
+    <!-- Área de confirmação -->
+    <section id="confirmacao" style="display:none;">
+      <h2>✅ Pedido Confirmado!</h2>
+      <p>Seu pedido está em produção 🍕</p>
+      <p>Nosso forno já está aquecido e logo sua pizza estará pronta!</p>
+      <div class="progresso">
+        <div class="barra"></div>
+      </div>
+      <a id="whatsappLink" target="_blank">📲 Acompanhar pelo WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Obrigado por escolher a Pizzaria do Robson 🍕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

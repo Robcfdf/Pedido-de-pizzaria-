@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzaria do Robson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>🍕 Pizzaria do Robson</h1>
+      <ul>
+        <li><a href="index.html">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="pagamento.html">Pagamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nosso Cardápio</h2>
+    <section class="cardapio">
+      <div class="pizza-card">
+        <img src="img/calabresa.jpg" alt="Pizza de Calabresa">
+        <h3>Calabresa</h3>
+        <p>Molho especial, queijo mussarela e calabresa fatiada.</p>
+        <label>Tamanho:</label>
+        <select id="calabresa-tamanho">
+          <option value="Pequena">Pequena - R$ 35</option>
+          <option value="Média">Média - R$ 45</option>
+          <option value="Grande">Grande - R$ 55</option>
+        </select>
+        <button onclick="fazerPedido('Calabresa','calabresa-tamanho',35)">Pedir</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="img/queijos.jpg" alt="Pizza Quatro Queijos">
+        <h3>Quatro Queijos</h3>
+        <p>Mussarela, gorgonzola, parmesão e provolone.</p>
+        <label>Tamanho:</label>
+        <select id="queijos-tamanho">
+          <option value="Pequena">Pequena - R$ 40</option>
+          <option value="Média">Média - R$ 50</option>
+          <option value="Grande">Grande - R$ 60</option>
+        </select>
+        <button onclick="fazerPedido('Quatro Queijos','queijos-tamanho',40)">Pedir</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="img/frango.jpg" alt="Pizza de Frango com Catupiry">
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado, catupiry cremoso e temperos especiais.</p>
+        <label>Tamanho:</label>
+        <select id="frango-tamanho">
+          <option value="Pequena">Pequena - R$ 38</option>
+          <option value="Média">Média - R$ 48</option>
+          <option value="Grande">Grande - R$ 58</option>
+        </select>
+        <button onclick="fazerPedido('Frango com Catupiry','frango-tamanho',38)">Pedir</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="img/brigadeiro.jpg" alt="Pizza de Brigadeiro">
+        <h3>Brigadeiro</h3>
+        <p>Chocolate derretido, granulado e massa crocante.</p>
+        <label>Tamanho:</label>
+        <select id="brigadeiro-tamanho">
+          <option value="Pequena">Pequena - R$ 42</option>
+          <option value="Média">Média - R$ 52</option>
+          <option value="Grande">Grande - R$ 62</option>
+        </select>
+        <button onclick="fazerPedido('Brigadeiro','brigadeiro-tamanho',42)">Pedir</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>📦 Entregamos rápido e quentinho na sua casa!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
