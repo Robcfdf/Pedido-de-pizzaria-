@@ -19,52 +19,41 @@ header {
   color: white;
   padding: 15px 20px;
 }
-
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-header h1 {
-  font-size: 1.5em;
-}
-
+header h1 { font-size: 1.5em; }
 header ul {
   list-style: none;
   display: flex;
   gap: 15px;
 }
-
 header ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
-
-header ul li a:hover {
-  color: #ffe082;
-}
+header ul li a:hover { color: #ffe082; }
 
 /* Conteúdo principal */
 main {
   padding: 20px;
   text-align: center;
 }
-
 main h2 {
   margin-bottom: 20px;
   color: #ff4b2b;
 }
 
-/* Cardápio */
+/* Cardápio responsivo */
 .cardapio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-
 .pizza-card {
   background: white;
   border-radius: 10px;
@@ -73,26 +62,14 @@ main h2 {
   text-align: center;
   transition: transform 0.3s;
 }
-
-.pizza-card:hover {
-  transform: scale(1.03);
-}
-
+.pizza-card:hover { transform: scale(1.03); }
 .pizza-card img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
-.pizza-card h3 {
-  margin-bottom: 10px;
-  color: #ff6a00;
-}
-
-.pizza-card p {
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
+.pizza-card h3 { margin-bottom: 10px; color: #ff6a00; }
+.pizza-card p { font-size: 0.9em; margin-bottom: 10px; }
 
 /* Botões */
 button {
@@ -105,10 +82,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
-
-button:hover {
-  background: #ff6a00;
-}
+button:hover { background: #ff6a00; }
 
 /* Formulários */
 form {
@@ -120,13 +94,11 @@ form {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
 }
-
 form label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
 }
-
 form input, form select {
   width: 100%;
   padding: 8px;
@@ -134,11 +106,7 @@ form input, form select {
   border: 1px solid #ccc;
   border-radius: 6px;
 }
-
-form button {
-  width: 100%;
-  margin-top: 15px;
-}
+form button { width: 100%; margin-top: 15px; }
 
 /* Página Sobre */
 .imagem-sobre {
@@ -159,21 +127,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  header nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .cardapio {
-    grid-template-columns: 1fr;
-  }
-
-  form {
-    width: 90%;
-  }
-}
 /* Área de confirmação */
 #confirmacao {
   background: #e8f5e9;
@@ -183,11 +136,7 @@ footer {
   margin-top: 20px;
   text-align: center;
 }
-
-#confirmacao h2 {
-  color: #4caf50;
-}
-
+#confirmacao h2 { color: #4caf50; }
 #whatsappLink {
   display: inline-block;
   margin-top: 15px;
@@ -199,10 +148,7 @@ footer {
   font-weight: bold;
   transition: 0.3s;
 }
-
-#whatsappLink:hover {
-  background: #128c7e;
-}
+#whatsappLink:hover { background: #128c7e; }
 
 /* Barra de progresso */
 .progresso {
@@ -213,15 +159,25 @@ footer {
   margin: 15px auto;
   overflow: hidden;
 }
-
 .progresso .barra {
   width: 0;
   height: 100%;
   background: #ff4b2b;
   animation: carregar 5s forwards;
 }
-
 @keyframes carregar {
   from { width: 0; }
   to { width: 100%; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cardapio {
+    grid-template-columns: 1fr; /* força uma coluna no celular */
+  }
+  form { width: 90%; }
 }

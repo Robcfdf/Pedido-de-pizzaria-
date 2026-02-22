@@ -50,4 +50,4 @@ Este projeto foi desenvolvido para praticar conceitos de **HTML, CSS e JavaScrip
 
 ## 👤 Autor
 Robson Duarte
-🔗 GitHub: Robcfdf
+🔗 GitHub: [Robcfdf](https://github.com/Robcfdf)
