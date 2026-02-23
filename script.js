@@ -48,7 +48,7 @@ function confirmarPedido(event) {
     const mensagem = `Olá, sou ${nome}. Meu pedido:\nPizza: ${pedido.sabor} (${pedido.tamanho}) x${pedido.quantidade}\nTotal: R$ ${pedido.total}\nEndereço: ${endereco}\nTelefone: ${telefone}\nPagamento: ${pagamento}`;
     
     // Número da pizzaria (exemplo fictício)
-    const numeroPizzaria = "5548999999999"; // formato com DDI + DDD + número
+    const numeroPizzaria = "5548111111111"; // formato com DDI + DDD + número
     const link = `https://wa.me/${numeroPizzaria}?text=${encodeURIComponent(mensagem)}`;
 
     document.getElementById("whatsappLink").href = link;
